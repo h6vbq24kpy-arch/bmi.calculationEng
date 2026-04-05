@@ -1,0 +1,155 @@
+html {
+    font-size: 16px !important;
+}
+
+/* Body全体の設定 */
+body {
+    background-color: #66CCCC;
+    margin: auto;
+}
+
+/* タイトルの設定 */
+.head-line {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+/* 説明の設定 */
+.explain {
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* インプット部分 */
+.height {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.weight {
+    margin: auto;
+    text-align: center;
+}
+
+/* ボタンの設定 */
+.button-line {
+    text-align: center;
+}
+
+/* ボタン間のスペースを調整 */
+.button {
+    margin-right: 10px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.reset {
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* 結果表示の設定 */
+.result-line {
+    display: flex;
+    justify-content: center; /* 横方向の中央寄せ */
+    align-items: center; /* 縦方向の中央寄せ */
+    gap: 15px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* テーブルの設定 */
+table  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* テーブル内ハイライトの設定 */
+.low.highlight {
+    background-color: #FF9933;
+}
+
+.mid.highlight {
+    background-color: #FFFF00;
+}
+
+.max.highlight {
+    background-color: #00FFFF;
+}
+
+.Twitter {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+  .result-line {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .result,
+  .BMIcategory {
+    width: 90%;
+    max-width: 320px;
+    text-align: left;
+  }
+
+  .result input,
+  .comment {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px !important;
+  }
+
+  .result input {
+    height: 36px;
+  }
+
+  .comment {
+    height: 70px;
+    resize: none;
+    white-space: pre-wrap;
+  }
+
+  .BMIcategory label,
+  .result label {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

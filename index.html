@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="head-line">BMI Calculator</h1> <!--画像上のヘッダー部分-->
+</header>
+
+<section id="input-line">
+    <p class="explain">Enter your details and click Calculate</p>
+    <div class="height"><label>Height: <input type="tel"> cm</label></div><br>
+    <div class="weight"><label>Weight: <input type="tel"> kg</label></div><br>
+</section>
+
+<div class="button-line">
+    <button class="button">Calculate</button>
+    <button class="reset">Clear</button>
+</div>
+
+<div class="result-line">
+    <div class="result"><label>BMI: <input readonly></label></div><br>
+    <div class="BMIcategory"><label>Well then... <textarea readonly class="comment"></textarea></div>
+</div>
+
+<div id="popup" class="hidden"></div>
+
+<!-- twitter -->
+<div class="Twitter"></div>
+    
+</body>
+<script src="script.js"></script>
+</html>
