@@ -105,46 +105,53 @@ table  {
 
 @media (max-width: 600px) {
 
-/* 親のflex方向を縦にする */
-.result-line {
-    flex-direction: column; /* 縦並びに変更 */
-    align-items: center; /* 中央寄せ */
+  /* 親のflex方向を縦にする */
+  .result-line {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
-/* 子要素は幅を広めに */
-.result {
-    width: 150px;               
-    text-align: center;
+  /* BMI欄とコメント欄の箱サイズを揃える */
+  .result,
+  .BMIcategory {
+    width: 90%;
+    max-width: 320px;
     margin: 0 auto;
   }
 
-/* input自体も幅をしっかり取る */
-.result input,
-.BMIcategory input {
-    width: 200%;
-    box-sizing: border-box;
+  /* labelは縦並びにしやすくする */
+  .result label,
+  .BMIcategory label {
+    display: block;
+    margin-bottom: 6px;
   }
 
-
-/* インプット欄を選択した時ズームされないようにする */
-.height input,
-.weight input,
-.result input,
-.BMIcategory input {
+  /* BMI表示欄 */
+  .result input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
     font-size: 16px !important;
-    }
+  }
 
-.BMIcategory input {
-    width: 300px;
-}
-
-.comment {
-    width: 90%;
-    height: 60px;
-    resize: none;       /* サイズ変更禁止 */
+  /* コメント欄 */
+  .comment {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    resize: none;
     white-space: pre-wrap;
-}
+    font-size: 16px !important;
+  }
 
+  /* 入力欄のズーム対策 */
+  .height input,
+  .weight input,
+  .result input,
+  .comment {
+    font-size: 16px !important;
+  }
 }
 
 
