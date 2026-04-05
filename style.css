@@ -102,51 +102,49 @@ table  {
   margin-top: 20px;
 }
 
+
 @media (max-width: 600px) {
 
-  .result-line {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
+/* 親のflex方向を縦にする */
+.result-line {
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center; /* 中央寄せ */
   }
 
-  .height input,
+/* 子要素は幅を広めに */
+.result {
+    width: 150px;               
+    text-align: center;
+    margin: 0 auto;
+  }
+
+/* input自体も幅をしっかり取る */
+.result input,
+.BMIcategory input {
+    width: 200%;
+    box-sizing: border-box;
+  }
+
+
+/* インプット欄を選択した時ズームされないようにする */
+.height input,
 .weight input,
 .result input,
 .BMIcategory input {
     font-size: 16px !important;
     }
 
-  .result,
-  .BMIcategory {
+.BMIcategory input {
+    width: 300px;
+}
+
+.comment {
     width: 90%;
-    max-width: 320px;
-    text-align: left;
-  }
-
-  .result input,
-  .comment {
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px !important;
-  }
-
-  .result input {
-    height: 36px;
-  }
-
-  .comment {
-    height: 70px;
-    resize: none;
+    height: 60px;
+    resize: none;       /* サイズ変更禁止 */
     white-space: pre-wrap;
-  }
+}
 
-  .BMIcategory label,
-  .result label {
-    display: block;
-    margin-bottom: 6px;
-  }
 }
 
 
